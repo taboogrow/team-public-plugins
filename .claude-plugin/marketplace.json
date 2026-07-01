@@ -1,0 +1,44 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "team-public-plugins",
+  "owner": {
+    "name": "Taboo Grow Team"
+  },
+  "plugins": [
+    {
+      "name": "skill-creator",
+      "description": "Author, evaluate, and iteratively improve Claude Code skills, with scaffolding and automated blind comparisons.",
+      "source": {
+        "source": "git-subdir",
+        "url": "anthropics/claude-plugins-official",
+        "path": "plugins/skill-creator"
+      }
+    },
+    {
+      "name": "superpowers",
+      "description": "Core skills library for Claude Code: structured TDD workflow, parallel task execution, isolated git worktrees, systematic code review, and proven collaboration patterns.",
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers"
+      }
+    },
+    {
+      "name": "session-report",
+      "description": "Generate an explorable HTML report of Claude Code session usage (tokens, cache efficiency, subagents, skills, and the most expensive prompts) from local ~/.claude/projects transcripts.",
+      "source": {
+        "source": "git-subdir",
+        "url": "anthropics/claude-plugins-official",
+        "path": "plugins/session-report"
+      }
+    },
+    {
+      "name": "claude-code-setup",
+      "description": "Scan a codebase and recommend tailored Claude Code automations including hooks, skills, MCP servers, and subagents.",
+      "source": {
+        "source": "git-subdir",
+        "url": "anthropics/claude-plugins-official",
+        "path": "plugins/claude-code-setup"
+      }
+    }
+  ]
+}
